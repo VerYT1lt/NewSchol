@@ -10,12 +10,12 @@
 #         self.price = 0.0
 #
 #     def input_data(self):
-#         self.model = input("Enter car model: ")
-#         self.year = input("Enter year of manufacture: ")
-#         self.manufacturer = input("Enter manufacturer: ")
-#         self.engine_capacity = float(input("Enter engine capacity: "))
-#         self.color = input("Enter car color: ")
-#         self.price = float(input("Enter car price: "))
+#         self.model = input("Что за модель машины: ")
+#         self.year = input("Укажите год выпуска: ")
+#         self.manufacturer = input("Введите производителя: ")
+#         self.engine_capacity = float(input("Введите мощность двигателя: "))
+#         self.color = input("Цвет: ")
+#         self.price = float(input("Сюда обычно входит кредит хммм??: "))
 #
 #     def output_data(self):
 #         print("Car Model:", self.model)
@@ -54,12 +54,12 @@
 #         self.price = 0.0
 #
 #     def input_data(self):
-#         self.title = input("Enter book title: ")
-#         self.year = input("Enter year of publication: ")
-#         self.publisher = input("Enter publisher: ")
-#         self.genre = input("Enter genre: ")
-#         self.author = input("Enter author: ")
-#         self.price = float(input("Enter book price: "))
+#         self.title = input("Введите название книги: ")
+#         self.year = input("Укажите год публикации: ")
+#         self.publisher = input("Введите имя издателя: ")
+#         self.genre = input("Жанр: ")
+#         self.author = input("Его автор: ")
+#         self.price = float(input("Цена книги: "))
 #
 #     def output_data(self):
 #         print("Book Title:", self.title)
@@ -97,11 +97,11 @@
 #         self.capacity = 0
 #
 #     def input_data(self):
-#         self.name = input("Enter stadium name: ")
-#         self.opening_date = input("Enter opening date: ")
-#         self.country = input("Enter country: ")
-#         self.city = input("Enter city: ")
-#         self.capacity = int(input("Enter stadium capacity: "))
+#         self.name = input("Что за стадион: ")
+#         self.opening_date = input("Введите дату открытия: ")
+#         self.country = input("Введите страну: ")
+#         self.city = input("Введите город: ")
+#         self.capacity = int(input("Введите вместимость стадиона: "))
 #
 #     def output_data(self):
 #         print("Stadium Name:", self.name)
