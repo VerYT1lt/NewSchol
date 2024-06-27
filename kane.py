@@ -122,3 +122,16 @@ class Stadium:
 
     def get_capacity(self):
         return self.capacity
+car = Car()
+car.input_data()
+car.output_data()
+
+
+book = Book()
+book.input_data()
+book.output_data()
+
+
+stadium = Stadium()
+stadium.input_data()
+stadium.output_data()
