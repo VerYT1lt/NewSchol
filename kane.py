@@ -138,3 +138,59 @@
 # stadium.input_data()
 # stadium.output_data()
 # 26 июня
+
+# class TriangleChecker:
+#     def __init__(self, a, b, c):
+#         self.a = a
+#         self.b = b
+#         self.c = c
+#
+#     def is_triangle(self):
+#         if not all(isinstance(x, (int, float)) for x in [self.a, self.b, self.c]):
+#             return "Нужно вводить только числа!"
+#         if any(x <= 0 for x in [self.a, self.b, self.c]):
+#             return "С отрицательными числами ничего не выйдет!"
+#         if (self.a + self.b > self.c) and (self.a + self.c > self.b) and (self.b + self.c > self.a):
+#             return "Ура, можно построить треугольник!"
+#         else:
+#             return "Жаль, но из этого треугольник не сделать."
+
+# Пример использования:
+# checker = TriangleChecker(3, 4, 5)
+# print(checker.is_triangle())
+#
+# checker = TriangleChecker(1, 1, 2)
+# print(checker.is_triangle())
+#
+# checker = TriangleChecker(3, -4, 5)
+# print(checker.is_triangle())
+#
+# checker = TriangleChecker(3, '4', 5)
+# print(checker.is_triangle())
+
+
+
+# class KgToPounds:
+#     def __init__(self, kg):
+#         self._kg = kg
+#
+#     @property
+#     def kg(self):
+#         return self._kg
+#
+#     @kg.setter
+#     def kg(self, value):
+#         if isinstance(value, (int, float)):
+#             self._kg = value
+#         else:
+#             raise ValueError("Килограммы должны быть числом")
+#
+#     def to_pounds(self):
+#         return self._kg * 2.20462
+#
+# converter = KgToPounds(10)
+# print(converter.to_pounds())
+#
+# converter.kg = 20
+# print(converter.kg)
+# print(converter.to_pounds())
