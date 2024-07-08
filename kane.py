@@ -194,3 +194,123 @@
 # converter.kg = 20
 # print(converter.kg)
 # print(converter.to_pounds())
+#30 июня
+#Смотреть выше(то же самое )
+
+#3 июля
+#1
+# class Person:
+#     pass
+#
+# id_1 = Person()
+#
+# setattr(id_1, "name", "Vasya")
+#
+# setattr(id_1, "name", "Masha")
+#
+# print(id_1.name)
+# #2
+# class Person:
+#     setup = ['имя ', 'Годиков', 'работа', 'Учться ли?']
+#
+# id_1 = Person()
+# for attribute in id_1.setup:
+#     value = input(f"Введите значение для {attribute}: ")
+#     setattr(id_1, attribute, value)
+#
+#
+# for attribute in id_1.setup:
+#     print(f"{attribute}: {getattr(id_1, attribute)}")
+#3
+# class Person:
+#     pass
+#
+#
+# id_1 = Person()
+#
+#
+# setattr(id_1, "dance", "Hip Hop")
+# setattr(id_1, "draw", "Sketching")
+# setattr(id_1, "sing", "Opera")
+#
+#
+# attributes = ["dance", "draw", "sing"]
+#
+#
+# for attr in attributes:
+#     print(getattr(id_1, attr))
+#6 июля
+#1
+# class Homer:
+#     def __init__(self, name):
+#         self.name = name
+#
+# class Daughter(Homer):
+#     pass
+#
+# daughter1 = Daughter("Lisa")
+#
+#
+# print(daughter1.name)
+#2
+# class Shape:
+#     def calculate_area(self):
+#        pass
+#
+# class Rectangle(Shape):
+#     def __init__(self, width, height):
+#         self.width = width
+#         self.height = height
+#
+#     def calculate_area(self):
+#         return self.width * self.height
+#
+# class Circle(Shape):
+#     def __init__(self, radius):
+#         self.radius = radius
+#
+#     def calculate_area(self):
+#         import math
+#         return math.pi * (self.radius ** 2)
+#
+# class Triangle(Shape):
+#     def __init__(self, base, height):
+#         self.base = base
+#         self.height = height
+#
+#     def calculate_area(self):
+#         return 0.5 * self.base * self.height
+#
+#
+# rectangle = Rectangle(5, 10)
+# circle = Circle(7)
+# triangle = Triangle(6, 8)
+#
+# print(rectangle.calculate_area())
+# print(circle.calculate_area())
+# print(triangle.calculate_area())
+#3
+# class Animal:
+#     def make_sound(self):
+#         pass
+#
+# class Dog(Animal):
+#     def make_sound(self):
+#         return "Woof"
+#
+# class Cat(Animal):
+#     def make_sound(self):
+#         return "Meow"
+#
+# class Bird(Animal):
+#     def make_sound(self):
+#         return "Tweet"
+#
+#
+# dog = Dog()
+# cat = Cat()
+# bird = Bird()
+#
+# print(dog.make_sound())
+# print(cat.make_sound())
+# print(bird.make_sound())
