@@ -1,5 +1,4 @@
-
-#22 июня дз
+# 22 июня дз
 # class Car:
 #     def __init__(self):
 #         self.model = ""
@@ -169,7 +168,6 @@
 # print(checker.is_triangle())
 
 
-
 # class KgToPounds:
 #     def __init__(self, kg):
 #         self._kg = kg
@@ -194,11 +192,11 @@
 # converter.kg = 20
 # print(converter.kg)
 # print(converter.to_pounds())
-#30 июня
-#Смотреть выше(то же самое )
+# 30 июня
+# Смотреть выше(то же самое )
 
-#3 июля
-#1
+# 3 июля
+# 1
 # class Person:
 #     pass
 #
@@ -221,7 +219,7 @@
 #
 # for attribute in id_1.setup:
 #     print(f"{attribute}: {getattr(id_1, attribute)}")
-#3
+# 3
 # class Person:
 #     pass
 #
@@ -239,8 +237,8 @@
 #
 # for attr in attributes:
 #     print(getattr(id_1, attr))
-#6 июля
-#1
+# 6 июля
+# 1
 # class Homer:
 #     def __init__(self, name):
 #         self.name = name
@@ -252,7 +250,7 @@
 #
 #
 # print(daughter1.name)
-#2
+# 2
 # class Shape:
 #     def calculate_area(self):
 #        pass
@@ -289,7 +287,7 @@
 # print(rectangle.calculate_area())
 # print(circle.calculate_area())
 # print(triangle.calculate_area())
-#3
+# 3
 # class Animal:
 #     def make_sound(self):
 #         pass
@@ -314,8 +312,8 @@
 # print(dog.make_sound())
 # print(cat.make_sound())
 # print(bird.make_sound())
-#10 июля
-#1
+# 10 июля
+# 1
 # class Bank:
 #     def __init__(self, client_name, card_number, balance):
 #         self.__client_name = client_name
@@ -331,7 +329,7 @@
 # bank_account.print_balance()
 # bank_account.change_balance(200)
 # bank_account.print_balance()
-#2
+# 2
 # class Bank:
 #     def __init__(self, client_name, card_number, balance):
 #         self.__client_name = client_name
@@ -363,13 +361,13 @@
 # print(bank_account.balance)
 # del bank_account.balance
 # print(bank_account.balance)
-#13 июля
+# 13 июля
 # from figures import circle_area, triangle_perimeter, square_area
 #
 # print(circle_area(10))  # Площадь окружности с радиусом 10
 # print(triangle_perimeter())  # Периметр треугольника со сторонами по умолчанию
 # print(square_area(5))  # Площадь квадрата со стороной 5
-#18 Июля
+# 18 Июля
 # import random
 # import pygame, sys
 #
@@ -462,7 +460,7 @@
 #     pygame.display.update()
 #     clock.tick(120)
 
-#20 июля
+# 20 июля
 # def flatten(lst, depth=None):
 #
 #     def flatten_once(l):
@@ -493,8 +491,8 @@
 # print(flatten(nested_list, 1))
 # print(flatten(nested_list, 2))
 # print(flatten(nested_list, 3))
-#25 июня скрин
-#27 июня
+# 25 июня скрин
+# 27 июня
 # from time import time, sleep
 #
 # def measure_time(func):
@@ -540,7 +538,7 @@
 # print('Время работы f2:', round(time_of_f2, 2))
 # print('Время работы f3:', round(time_of_f3, 2))
 
-#7 августа
+# 7 августа
 # class Singleton:
 #     _instance = None
 #
@@ -638,3 +636,68 @@
 #
 #     print("\nTesting client code with MacFactory:")
 #     client_code(MacFactory())
+
+# 31 июля
+# 1
+# user_role = 'manager'  # Можно менять на 'admin' или другие роли для тестирования
+#
+# def role_required(role: str):
+#     def decorator(func):
+#         def wrapper(*args, **kwargs):
+#             if user_role == role:
+#                 return func(*args, **kwargs)
+#             else:
+#                 return 'Permission denied'
+#         return wrapper
+#     return decorator
+#
+# @role_required('admin')
+# def secret_resource() -> str:
+#     return 'Permission accepted'
+#
+# # Примеры использования
+# print(secret_resource())  # Выведет 'Permission denied', так как роль 'manager'
+# user_role = 'admin'
+# print(secret_resource())
+# 2
+# RU_TO_EN = {
+#     'привет': 'hello',
+#     'мир': 'world',
+#     'еда': 'food',
+# }
+#
+# RU_TO_LT = {
+#     'привет': 'sveiki',
+#     'мир': 'pasaulis',
+#     'еда': 'maistas',
+# }
+#
+# def translate_to(lang: str):
+#     def decorator(func):
+#         def wrapper(word: str) -> str:
+#             translation = word
+#             if lang == 'EN':
+#                 translation = RU_TO_EN.get(word, word)
+#             elif lang == 'LT':
+#                 translation = RU_TO_LT.get(word, word)
+#             return translation
+#         return wrapper
+#     return decorator
+#
+# @translate_to('EN')
+# def say(word: str) -> str:
+#     return word
+#
+# # Примеры использования
+# print(say('привет'))  #
+# print(say('мир'))
+#
+#
+# @translate_to('LT')
+# def say_lithuanian(word: str) -> str:
+#     return word
+#
+# print(say_lithuanian('привет'))
+# print(say_lithuanian('мир'))
+# 10августа
+#строчка import mvc_exceptions as mvc_exc не работает
