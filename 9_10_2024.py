@@ -14,7 +14,7 @@ conn = psycopg2.connect(
 )
 
 
-BOT_TOKEN = '7766088929:AAGFdwHr8PjRcweVl_4MZV-ySSl58m9cY1Q'
+BOT_TOKEN = '7766088929'
 bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher()
 
